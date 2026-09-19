@@ -21,7 +21,7 @@ de arquivo exige**:
 
 | Caso | Exemplo |
 |---|---|
-| Arquivos de raiz reconhecidos por convenção | `README.md`, `LICENSE`, `AGENTS.md` |
+| Arquivos de raiz reconhecidos por convenção | `README.md`, `LICENSE`, `CLAUDE.md` |
 | Ferramentas que esperam um nome exato | `Dockerfile`, `Makefile` |
 | Componentes em ecossistemas que usam PascalCase | `GameCard.jsx` |
 

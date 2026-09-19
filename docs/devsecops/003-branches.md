@@ -12,15 +12,19 @@ representa um estágio de promoção, e a mudança sobe de um para o outro.
 1+ branches temporárias → dev → qa → staging → homolog → main
 ```
 
-| Branch | Papel |
-|---|---|
-| `dev` | Integração do trabalho em andamento |
-| `qa` | Testes |
-| `staging` | Ambiente equivalente ao de produção |
-| `homolog` | Homologação: validação oficial com o cliente |
-| `main` | Produção |
+| Branch | Papel | Sobe para a próxima quando |
+|---|---|---|
+| `dev` | Integração do trabalho em andamento | está integrado e funciona |
+| `qa` | Testes | os testes passam |
+| `staging` | Ambiente equivalente ao de produção | funciona num ambiente igual ao de produção |
+| `homolog` | Homologação: validação oficial com o cliente | o cliente aprovou |
+| `main` | Produção | — |
 
 Branches de ambiente são permanentes. Nunca se apaga nenhuma delas.
+
+Sendo um projeto pessoal, **o cliente é o autor do repositório**. O objetivo
+é simular um ciclo de desenvolvimento completo, mesmo que nem todo estágio
+tenha, por enquanto, um ambiente real por trás.
 
 ## Branches temporárias
 
@@ -55,6 +59,9 @@ my-steam/feat/game-download
 my-steam/poc/wasm-game-pipeline
 store/fix/cart-total
 ```
+
+`store` é um módulo hipotético, só para ilustrar. Enquanto não houver
+módulos, toda branch usa `my-steam`.
 
 ## Hotfix
 

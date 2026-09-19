@@ -3,6 +3,9 @@
 Toda documentação deste projeto é numerada com prefixo `001-`, `002-`, ...
 O critério da numeração muda conforme a natureza da pasta.
 
+A exceção é o `README.md` de cada pasta: ele é o índice da pasta, não um
+documento da sequência, e por isso não leva número.
+
 ## [`product/`](product/) — o que estamos construindo
 
 Decisões de **produto**. Numerados por **ordem de leitura**: quem chega agora

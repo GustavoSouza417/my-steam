@@ -1,10 +1,10 @@
-# AGENTS.md
+# CLAUDE.md
 
 ## Contexto e objetivo
 
-Este repositório é um projeto pessoal de aprendizado: recriar, para a web, uma
-plataforma no estilo da Steam (loja, biblioteca, perfis, comunidade etc.),
-construída de forma incremental.
+Este repositório é um projeto pessoal de aprendizado: uma cópia da Steam para
+a web (loja, biblioteca, perfis, comunidade etc.), construída de forma
+incremental. A Steam é a especificação.
 
 O objetivo é duplo:
 
@@ -12,9 +12,12 @@ O objetivo é duplo:
 2. Aprender desenvolvimento assistido por IA e a prática de *vibe coding* —
    conversar, decidir e evoluir o código junto com o agente.
 
-Nada de tecnologia, arquitetura ou escopo está definido ainda. Não presuma
-stack, linguagem, framework ou modelo de dados. Essas decisões serão tomadas
-explicitamente, uma de cada vez, junto com o usuário.
+O escopo e as decisões de produto já tomadas estão em
+[`docs/product/`](docs/product/) — incluindo os jogos em C compilados para
+WebAssembly. A stack da plataforma (linguagem, framework, banco, modelo de
+dados) **ainda não foi decidida**: não a presuma. Essas decisões serão tomadas
+explicitamente, uma de cada vez, junto com o usuário, e registradas em
+[`docs/adr/`](docs/adr/).
 
 ## Princípios gerais de desenvolvimento
 
@@ -49,8 +52,12 @@ Mudanças grandes devem ser quebradas em etapas menores, cada uma revisável.
 
 ### Commits
 
-Conventional Commits, em inglês, título apenas, pequenos e frequentes.
-Regras completas em [`docs/devsecops/001-commits.md`](docs/devsecops/001-commits.md).
+Conventional Commits, em inglês, pequenos e frequentes. Título; corpo só
+quando necessário; trailer de coautoria sempre. Regras completas em
+[`docs/devsecops/001-commits.md`](docs/devsecops/001-commits.md).
+
+O agente commita por conta própria nas **branches temporárias**. Merge entre
+branches de ambiente e push só acontecem por ordem do usuário.
 
 ## Documentação
 
@@ -66,8 +73,8 @@ que explica os critérios e onde cada assunto deve ser registrado.
   Arquivo novo só quando o assunto não couber em nenhum. Muitos documentos
   geram duplicidade e inflam a carga cognitiva de quem acompanha o projeto.
 - Ser objetivo: texto curto, sem repetir o que já está dito em outro lugar.
-- Manter este arquivo atualizado conforme decisões forem sendo tomadas: quando
-  uma escolha tecnológica ou arquitetural for definida, registre-a.
+- Registrar cada decisão no lugar certo (ver [`docs/README.md`](docs/README.md))
+  e atualizar este arquivo quando ela mudar o que o agente deve fazer.
 - Documentação curta e no lugar certo é melhor que documentação extensa.
 
 ## Evitar complexidade e abstrações prematuras

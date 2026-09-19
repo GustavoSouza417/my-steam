@@ -15,7 +15,7 @@ A documentação começa em [docs/README.md](docs/README.md): o produto em
 [docs/adr/](docs/adr/).
 
 As regras que o agente de IA segue neste repositório estão em
-[AGENTS.md](AGENTS.md).
+[CLAUDE.md](CLAUDE.md).
 
 Nada foi construído ainda — o estado de cada funcionalidade está em
 [docs/product/003-backlog.md](docs/product/003-backlog.md).
