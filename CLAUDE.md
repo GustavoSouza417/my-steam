@@ -2,9 +2,9 @@
 
 ## Contexto e objetivo
 
-Este repositório é um projeto pessoal de aprendizado: recriar, para a web, uma
-plataforma no estilo da Steam (loja, biblioteca, perfis, comunidade etc.),
-construída de forma incremental.
+Este repositório é um projeto pessoal de aprendizado: uma cópia da Steam para
+a web (loja, biblioteca, perfis, comunidade etc.), construída de forma
+incremental. A Steam é a especificação.
 
 O objetivo é duplo:
 
@@ -12,9 +12,12 @@ O objetivo é duplo:
 2. Aprender desenvolvimento assistido por IA e a prática de *vibe coding* —
    conversar, decidir e evoluir o código junto com o agente.
 
-Nada de tecnologia, arquitetura ou escopo está definido ainda. Não presuma
-stack, linguagem, framework ou modelo de dados. Essas decisões serão tomadas
-explicitamente, uma de cada vez, junto com o usuário.
+O escopo e as decisões de produto já tomadas estão em
+[`docs/product/`](docs/product/) — incluindo os jogos em C compilados para
+WebAssembly. A stack da plataforma (linguagem, framework, banco, modelo de
+dados) **ainda não foi decidida**: não a presuma. Essas decisões serão tomadas
+explicitamente, uma de cada vez, junto com o usuário, e registradas em
+[`docs/adr/`](docs/adr/).
 
 ## Princípios gerais de desenvolvimento
 
