@@ -73,8 +73,8 @@ que explica os critérios e onde cada assunto deve ser registrado.
   Arquivo novo só quando o assunto não couber em nenhum. Muitos documentos
   geram duplicidade e inflam a carga cognitiva de quem acompanha o projeto.
 - Ser objetivo: texto curto, sem repetir o que já está dito em outro lugar.
-- Manter este arquivo atualizado conforme decisões forem sendo tomadas: quando
-  uma escolha tecnológica ou arquitetural for definida, registre-a.
+- Registrar cada decisão no lugar certo (ver [`docs/README.md`](docs/README.md))
+  e atualizar este arquivo quando ela mudar o que o agente deve fazer.
 - Documentação curta e no lugar certo é melhor que documentação extensa.
 
 ## Evitar complexidade e abstrações prematuras
