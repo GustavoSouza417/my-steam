@@ -55,6 +55,11 @@ Como o jogo sai da loja e chega a rodar. Nada aqui é simulado na interface: o
 numa pasta real na máquina do usuário (como a Steam faz) e a **execução** (`launch`) roda
 o jogo.
 
+Isso é **requisito de produto**. A viabilidade técnica — como o navegador
+alcança uma pasta real — será validada na
+[PoC 001](../../pocs/README.md). Se ela mostrar que é inviável, o requisito
+volta para discussão.
+
 ### O que é um "jogo"
 
 Cada jogo é um "Hello World" em C compilado para **WebAssembly** (`wasm`), que imprime
