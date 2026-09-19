@@ -35,6 +35,18 @@ não revela.
 Se um commit precisa de parágrafos para ser explicado, em geral ele está
 grande demais: o caminho é dividi-lo, não descrevê-lo melhor.
 
+## Coautoria
+
+Commits gerados com o agente levam o trailer de coautoria:
+
+```
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+```
+
+É a única exceção à regra de só título: trailer não é descrição, e o histórico
+deve deixar claro o que foi escrito em parceria com a IA — o projeto é sobre
+desenvolvimento assistido por IA, então isso é informação, não ruído.
+
 ## Tamanho e frequência
 
 Commits **pequenos e frequentes**. Um commit, uma mudança coesa.
