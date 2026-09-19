@@ -56,6 +56,9 @@ my-steam/poc/wasm-game-pipeline
 store/fix/cart-total
 ```
 
+`store` é um módulo hipotético, só para ilustrar. Enquanto não houver
+módulos, toda branch usa `my-steam`.
+
 ## Hotfix
 
 Bug em produção não espera o fluxo inteiro. A branch sai da `main`, volta para
