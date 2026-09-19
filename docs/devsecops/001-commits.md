@@ -16,7 +16,9 @@ o nome das branches — ver [`003-branches.md`](003-branches.md).
 Sem espaço antes do parêntese — `feat(store):`, não `feat (store):`. É o que a
 especificação exige e o que ferramentas como commitlint esperam.
 
-Tipos: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`.
+Tipos: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `poc`.
+
+`poc` marca trabalho experimental e descartável, feito em [`../../pocs/`](../../pocs/).
 
 Descrição no imperativo e em minúscula, sem ponto final:
 `feat(my-steam): add game page`.

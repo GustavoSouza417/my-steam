@@ -52,8 +52,6 @@ my-steam/poc/wasm-game-pipeline
 store/fix/cart-total
 ```
 
-O tipo `poc` existe só para branches — não é tipo de commit.
-
 ## Hotfix
 
 Bug em produção não espera o fluxo inteiro. A branch sai da `main`, volta para
