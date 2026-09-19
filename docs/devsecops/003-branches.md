@@ -17,14 +17,18 @@ representa um estágio de promoção, e a mudança sobe de um para o outro.
 | `dev` | Integração do trabalho em andamento |
 | `qa` | Testes |
 | `staging` | Ambiente equivalente ao de produção |
-| `homolog` | Validação final antes de liberar |
+| `homolog` | Homologação: validação oficial com o cliente |
 | `main` | Produção |
 
 Branches de ambiente são permanentes. Nunca se apaga nenhuma delas.
 
 ## Branches temporárias
 
-É onde o trabalho acontece. Nascem de `dev`, morrem ao entrar em `dev`.
+É onde o trabalho acontece. Nascem de `dev` e sobem para `dev` quando prontas.
+
+Depois do merge, a branch **continua viva por pelo menos duas semanas**. Só
+então pode ser apagada. O prazo existe para que a branch ainda esteja lá se
+for preciso revisar, comparar ou recuperar algo logo após a integração.
 
 Mudança pequena resolve-se numa única branch temporária. Se for grande e a
 divisão fizer sentido, pode-se fazer um **mini fluxo** entre branches
