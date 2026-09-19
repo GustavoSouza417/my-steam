@@ -23,6 +23,7 @@ por **ordem de leitura**, como `product/`.
 
 1. [`001-commits.md`](devsecops/001-commits.md) — formato, tamanho e frequência dos commits.
 2. [`002-naming.md`](devsecops/002-naming.md) — nomes de arquivos, pastas e identificadores no código.
+3. [`003-branches.md`](devsecops/003-branches.md) — modelo de branches, nomenclatura e hotfix.
 
 ## [`adr/`](adr/) — como estamos construindo
 

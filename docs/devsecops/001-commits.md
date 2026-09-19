@@ -6,9 +6,12 @@
 **inglês**. A conversa do projeto é em português; o histórico, não.
 
 ```
-<tipo>: <descrição>           # afeta a plataforma toda
-<tipo>(<módulo>): <descrição> # afeta um módulo específico
+<tipo>(<plataforma ou módulo>): <descrição>
 ```
+
+O escopo é **sempre obrigatório**: `my-steam` quando a mudança afeta a
+plataforma toda, o nome do módulo quando é específica. A mesma regra vale para
+o nome das branches — ver [`003-branches.md`](003-branches.md).
 
 Sem espaço antes do parêntese — `feat(store):`, não `feat (store):`. É o que a
 especificação exige e o que ferramentas como commitlint esperam.
@@ -16,15 +19,12 @@ especificação exige e o que ferramentas como commitlint esperam.
 Tipos: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`.
 
 Descrição no imperativo e em minúscula, sem ponto final:
-`feat(store): add game page`.
+`feat(my-steam): add game page`.
 
-## Módulo
-
-O módulo entre parênteses é opcional. **Sem módulo, o commit vale para a
-plataforma toda.**
+## Escopo
 
 Os módulos serão nomeados quando o código existir e a divisão ficar clara.
-Enquanto não houver módulos, todo commit é da plataforma.
+Enquanto não houver módulos, todo commit é da plataforma — `feat(my-steam):`.
 
 ## Só título
 
