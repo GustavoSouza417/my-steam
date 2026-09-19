@@ -63,6 +63,34 @@ store/fix/cart-total
 `store` é um módulo hipotético, só para ilustrar. Enquanto não houver
 módulos, toda branch usa `my-steam`.
 
+## Como mesclar
+
+**Branch temporária → `dev`: sempre com `--no-ff`.**
+
+```bash
+git merge --no-ff my-steam/feat/game-download
+```
+
+O commit de merge preserva a fronteira do trabalho: dá para ver quais commits
+vieram de qual branch. Sem ele, tudo se dissolve numa sequência única.
+
+**Entre branches de ambiente: sempre com `--ff-only`.**
+
+```bash
+git switch qa && git merge --ff-only dev
+```
+
+A promoção não cria commit novo — o ambiente seguinte recebe exatamente o que
+foi aprovado no anterior. Se um `--ff-only` falhar, é sinal de que alguém
+commitou direto numa branch de ambiente, o que este fluxo não permite.
+
+**Mensagem de merge**: segue o mesmo padrão dos commits, já que o padrão do
+git (`Merge branch 'x'`) não segue.
+
+```
+chore(my-steam): merge clarity-audit fixes into dev
+```
+
 ## Hotfix
 
 Bug em produção não espera o fluxo inteiro. A branch sai da `main`, volta para
