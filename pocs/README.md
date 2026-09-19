@@ -6,7 +6,7 @@ Cada PoC fica numa subpasta própria, numerada por **ordem de criação** — a
 sequência é histórica, como a dos [ADRs](../docs/adr/):
 
 ```
-poc/001-nome-do-experimento/
+pocs/001-nome-do-experimento/
 ```
 
 ## O que é código de PoC
@@ -26,3 +26,16 @@ o que não funcionou e o que ficou em aberto.
 Se a resposta levar a uma decisão de arquitetura, ela vira um ADR em
 [`docs/adr/`](../docs/adr/). O ADR é o resultado que sobrevive; o código fica
 como evidência de que a decisão foi testada, não imaginada.
+
+## Índice
+
+Registro novo entra **no topo** — os mais recentes primeiro.
+
+| PoC | Pergunta | Autor | Status | Data |
+|---|---|---|---|---|
+| [001-wasm-game-pipeline](001-wasm-game-pipeline/) | Dá para baixar, instalar numa pasta real da máquina e executar um jogo WebAssembly pelo navegador? | GustavoSouza417 | planejada | 2026-09-19 |
+
+Status: `planejada` · `em desenvolvimento` · `concluída` · `abandonada`
+
+A data é a de criação do registro. O andamento e as conclusões ficam no
+`README.md` da própria PoC.
