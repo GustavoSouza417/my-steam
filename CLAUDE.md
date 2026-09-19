@@ -52,8 +52,12 @@ Mudanças grandes devem ser quebradas em etapas menores, cada uma revisável.
 
 ### Commits
 
-Conventional Commits, em inglês, título apenas, pequenos e frequentes.
-Regras completas em [`docs/devsecops/001-commits.md`](docs/devsecops/001-commits.md).
+Conventional Commits, em inglês, pequenos e frequentes. Título; corpo só
+quando necessário; trailer de coautoria sempre. Regras completas em
+[`docs/devsecops/001-commits.md`](docs/devsecops/001-commits.md).
+
+O agente commita por conta própria nas **branches temporárias**. Merge entre
+branches de ambiente e push só acontecem por ordem do usuário.
 
 ## Documentação
 
