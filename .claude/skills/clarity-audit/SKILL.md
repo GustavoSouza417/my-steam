@@ -1,75 +1,96 @@
 ---
 name: clarity-audit
-description: Audita o quanto a documentação do repositório se explica sozinha para um agente sem contexto de conversa. Lê tudo que está versionado e devolve as dúvidas que o texto não resolve — contradições, ambiguidades, termos indefinidos, referências quebradas. Use quando o usuário pedir /clarity-audit ou quiser testar se um agente novo entenderia o projeto.
+description: Audita se o repositório funciona como fonte de contexto para um agente que não participou das conversas anteriores. Lê tudo que está versionado — documentação, código, configuração, estrutura — e devolve as dúvidas que o próprio repositório não resolve, cada uma apoiada em evidência. Use quando o usuário pedir /clarity-audit.
 context: fork
 disable-model-invocation: true
 ---
 
 # Auditoria de clareza
 
-Você é um agente que acabou de chegar a este repositório. Não participou de
-nenhuma conversa sobre ele. Tudo que você sabe é o que está escrito nos
-arquivos.
+## Objetivo
 
-Sua tarefa é levantar as dúvidas que surgem **só pelo que está escrito**. O
-resultado mede o quanto a documentação se sustenta sozinha: cada dúvida é um
-ponto onde o próximo agente — ou humano — vai travar, chutar ou errar.
+Medir se o repositório consegue funcionar como **fonte de contexto** para um
+agente que não participou das conversas anteriores.
+
+Você é esse agente. Acabou de chegar e tudo que sabe é o que está no
+repositório. Cada dúvida que você levantar é um ponto onde o próximo agente —
+ou humano — vai travar, chutar ou errar ao tentar entender o estado atual do
+projeto.
 
 ## Como ler
 
-1. Liste os arquivos versionados com `git ls-files`.
-2. Leia **todos por inteiro**, exceto `LICENSE` e o conteúdo de `.claude/`
-   (esta skill não faz parte do que está sendo auditado).
-3. Não use o histórico do git nem nada fora do repositório. Se uma informação
-   só existe numa mensagem de commit, para efeito desta auditoria ela não
-   existe.
+1. Liste os arquivos versionados com `git ls-files` e observe a estrutura de
+   pastas que eles formam.
+2. Leia todos os arquivos por inteiro: documentação, código, configuração,
+   scripts. Arquivos binários, gerados ou de terceiros (`LICENSE`, lockfiles,
+   builds) basta registrar que existem.
+3. Ignore apenas este arquivo (`.claude/skills/clarity-audit/SKILL.md`): ele
+   é a ferramenta da auditoria, não o objeto dela.
+4. Não use o histórico do git nem nada fora do repositório. O que só existe
+   numa mensagem de commit, para efeito desta auditoria, não existe.
 
-Não edite nenhum arquivo. Seu papel é apontar, não corrigir — a correção é
+**Não altere nenhum arquivo.** Seu papel é auditar e relatar. A correção é
 feita depois, por quem tem o contexto.
 
-## O que conta como dúvida
+## O que é uma dúvida válida
 
-- **Contradição**: dois trechos que dizem coisas incompatíveis.
-- **Ambiguidade**: um trecho que admite mais de uma leitura razoável, e as
+Uma dúvida válida nasce de uma **evidência concreta**: um trecho, um arquivo,
+um código, uma regra ou uma relação entre arquivos. Primeiro identifique a
+evidência; a pergunta vem como consequência dela. Se você não consegue
+apontar a evidência, não é uma dúvida — é curiosidade ou sugestão, e fica de
+fora.
+
+A pergunta que guia a auditoria é: **o que está aqui e eu não consigo
+entender ou aplicar com segurança?** Não é "o que mais poderia estar aqui?".
+
+Por isso, não são dúvidas válidas:
+
+- **Ausência por si só.** Informação que falta só é problema quando é
+  necessária para entender ou aplicar algo que o repositório já afirma ou
+  implementa. Ser possível documentar algo não torna sua ausência uma lacuna.
+- **Decisões declaradas como em aberto.** Se o repositório diz que algo ainda
+  não foi decidido, isso é uma lacuna conhecida, não uma dúvida.
+- **Futuro.** Não pergunte sobre decisões futuras, funcionalidades não
+  planejadas ou qualquer coisa que não seja necessária para entender o estado
+  atual. Não invente decisões, requisitos ou funcionalidades.
+
+## Categorias
+
+- **Contradição** — dois trechos de documentação dizem coisas incompatíveis.
+- **Divergência entre documentação e implementação** — código, configuração
+  ou estrutura contradizem o que a documentação afirma. Formule a pergunta
+  como: qual das duas representa o estado atual?
+- **Ambiguidade** — um trecho admite mais de uma leitura razoável, e as
   leituras levam a ações diferentes.
-- **Termo indefinido**: palavra usada como se tivesse significado preciso, sem
-  que ele esteja definido em lugar nenhum.
-- **Referência quebrada**: link, caminho ou menção a algo que não existe.
-- **Regra sem critério**: instrução que depende de julgamento sem dizer como
+- **Termo indefinido** — palavra usada como se tivesse significado preciso,
+  sem que ele esteja definido em lugar nenhum.
+- **Referência quebrada** — link, caminho ou menção a algo que não existe.
+- **Regra sem critério** — instrução que depende de julgamento sem dizer como
   julgar ("quando fizer sentido", "se for grande").
-- **Regra violada**: o próprio repositório contradiz uma convenção que ele
+- **Regra violada** — o repositório não segue uma convenção que ele mesmo
   documenta.
-
-## O que não conta
-
-Coisas que a documentação **declara** como ainda não decididas não são
-dúvidas — são lacunas conhecidas. "Qual framework vamos usar?" não é uma
-dúvida válida se o texto diz que a stack não foi escolhida.
-
-Questione o que está escrito, não o que ainda não foi planejado. A pergunta
-certa não é "o que falta aqui?", e sim "o que está aqui e não consigo
-entender ou aplicar com segurança?".
 
 ## Severidade
 
-- **Alta** — um agente provavelmente agiria errado sem perceber.
-- **Média** — um agente teria que parar e perguntar.
-- **Baixa** — atrito de leitura, sem risco de ação errada.
+- **Alta** — o agente provavelmente agiria errado sem perceber.
+- **Média** — o agente precisaria parar e perguntar.
+- **Baixa** — há apenas atrito de compreensão, sem risco relevante de ação
+  incorreta.
 
 ## Formato da resposta
 
-Em português. Dúvidas numeradas, agrupadas por severidade (alta primeiro).
-Cada uma com:
+Em português. Dúvidas numeradas, agrupadas por severidade, da alta para a
+baixa:
 
 ```
 N. [categoria] Pergunta direta, como você a faria ao autor.
-   Onde: caminho/do/arquivo.md:linha (e outros trechos envolvidos)
-   Por quê: o que no texto gerou a dúvida, citando o trecho.
+   Onde: caminho/do/arquivo:linha (e os demais pontos envolvidos)
+   Evidência: o trecho, código ou relação entre arquivos que originou a dúvida.
+   Por quê: o motivo de essa evidência gerar a dúvida.
 ```
 
-Termine com uma linha de resumo: total de dúvidas, contagem por severidade e
-por categoria.
+Omita severidades sem dúvidas. Termine com uma linha de resumo: total de
+dúvidas, contagem por severidade e por categoria.
 
-Se não encontrar nenhuma dúvida numa severidade, omita o grupo. Não invente
-dúvidas para preencher — uma auditoria com poucas dúvidas reais é um resultado
-bom, não um resultado fraco.
+Não invente dúvidas para preencher. Poucas dúvidas reais é um resultado bom:
+significa que o repositório se sustenta sozinho.
