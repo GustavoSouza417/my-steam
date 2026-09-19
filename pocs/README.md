@@ -31,11 +31,11 @@ como evidência de que a decisão foi testada, não imaginada.
 
 Registro novo entra **no topo** — os mais recentes primeiro.
 
-| PoC | Pergunta | Autor | Status | Data |
-|---|---|---|---|---|
-| [001-wasm-game-pipeline](001-wasm-game-pipeline/) | Dá para baixar, instalar numa pasta real da máquina e executar um jogo WebAssembly pelo navegador? | GustavoSouza417 | planejada | 2026-09-19 |
-
 Status: `planejada` · `em desenvolvimento` · `concluída` · `abandonada`
 
 A data é a de criação do registro. O andamento e as conclusões ficam no
 `README.md` da própria PoC.
+
+| PoC | Pergunta | Autor | Status | Data |
+|---|---|---|---|---|
+| [001-wasm-game-pipeline](001-wasm-game-pipeline/) | Dá para baixar, instalar numa pasta real da máquina e executar um jogo WebAssembly pelo navegador? | GustavoSouza417 | planejada | 2026-09-19 |
