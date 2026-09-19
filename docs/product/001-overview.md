@@ -20,8 +20,8 @@ construir o software e aprender desenvolvimento assistido por IA.
 ## Natureza do projeto
 
 Projeto pessoal de aprendizado. Sem prazo, sem usuários reais, sem operação.
-Nada de jogos reais, pagamentos reais ou distribuição real de software —
-tudo é simulado.
+Jogos, catálogo e pagamentos são fictícios. Download, instalação e execução
+dos jogos, porém, são reais — ver [`002-scope.md`](002-scope.md).
 
 ## Não-objetivos
 
