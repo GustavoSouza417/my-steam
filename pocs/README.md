@@ -20,8 +20,16 @@ escrita do zero, com o aprendizado da PoC — não copiando o código dela.
 
 ## O que cada PoC entrega
 
-Um `README.md` na própria pasta com: a pergunta, como rodar, o que funcionou,
-o que não funcionou e o que ficou em aberto.
+Um `README.md` na própria pasta, copiado de [`template.md`](template.md).
+
+Ele nasce com título, metadados, pergunta e hipótese — antes de qualquer
+código. "Como rodar", "Ambiente" e "O que foi feito" crescem durante o
+experimento; "Resultados", "Veredito" e "O que ficou de fora" só no fim.
+
+O **timebox** é combinado antes de começar e é um limite, não uma estimativa:
+estourou, o experimento para e o veredito é escrito com o que houver — mesmo
+que seja `inconclusiva`. PoC que não termina deixa de ser barata, e é o custo
+baixo que a torna descartável.
 
 Se a resposta levar a uma decisão de arquitetura, ela vira um ADR em
 [`docs/adr/`](../docs/adr/). O ADR é o resultado que sobrevive; o código fica
