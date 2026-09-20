@@ -77,8 +77,9 @@ branches, o usuário perde o fio de onde o trabalho está.
 
 A documentação vive em [`docs/`](docs/): `product/` (o que construímos),
 `devsecops/` (como trabalhamos) e `adr/` (decisões de arquitetura, ainda
-vazia). Só `adr/` e `pocs/` são numerados, por ordem de criação. Ver [`docs/README.md`](docs/README.md),
-que explica os critérios e onde cada assunto deve ser registrado.
+vazia). Só `adr/` e `pocs/` são numerados, por ordem de criação. Ver
+[`docs/README.md`](docs/README.md), que explica os critérios e onde cada
+assunto deve ser registrado.
 
 - Documentar o que **não** dá para deduzir lendo o código: decisões, motivos
   e alternativas descartadas.
