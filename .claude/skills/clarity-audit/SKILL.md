@@ -3,6 +3,9 @@ name: clarity-audit
 description: Audita se o repositório funciona como fonte de contexto para um agente que não participou das conversas anteriores. Lê tudo que está versionado — documentação, código, configuração, estrutura — e devolve as dúvidas que o próprio repositório não resolve, cada uma apoiada em evidência. Use quando o usuário pedir /clarity-audit.
 context: fork
 disable-model-invocation: true
+model: claude-opus-5
+effort: xhigh
+disallowed-tools: Edit, Write
 ---
 
 # Auditoria de clareza
