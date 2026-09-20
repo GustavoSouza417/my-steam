@@ -39,6 +39,10 @@ divisão fizer sentido, pode-se fazer um **mini fluxo** entre branches
 temporárias — várias alimentando uma branch temporária maior — antes de subir
 para `dev`.
 
+Quem decide se uma mudança é grande o bastante para isso é o **autor do
+repositório**. O agente pode propor a divisão, mas não a adota por conta
+própria.
+
 ## Nomenclatura
 
 ```
