@@ -2,6 +2,8 @@
 name: promote
 description: Integra as branches temporárias pendentes em `dev` e promove `dev` por toda a cadeia de ambientes até `main`, seguindo as regras de merge do projeto. Não publica nada no remoto. Use quando o usuário pedir /promote.
 disable-model-invocation: true
+model: claude-sonnet-5
+effort: high
 allowed-tools: Bash(git status:*), Bash(git branch:*), Bash(git switch:*), Bash(git merge:*), Bash(git log:*), Bash(git rev-parse:*)
 disallowed-tools: Edit, Write
 ---
