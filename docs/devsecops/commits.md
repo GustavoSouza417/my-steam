@@ -11,7 +11,7 @@
 
 O escopo é **sempre obrigatório**: `my-steam` quando a mudança afeta a
 plataforma toda, o nome do módulo quando é específica. A mesma regra vale para
-o nome das branches — ver [`003-branches.md`](003-branches.md).
+o nome das branches — ver [`branches.md`](branches.md).
 
 Sem espaço antes do parêntese — `feat(store):`, não `feat (store):`. É o que a
 especificação exige e o que ferramentas como commitlint esperam.
@@ -39,7 +39,8 @@ grande demais: o caminho é dividi-lo, não descrevê-lo melhor.
 
 ## Coautoria
 
-Commits gerados com o agente levam o trailer de coautoria:
+Todo commit gerado com o agente leva o trailer de coautoria, inclusive os
+de merge:
 
 ```
 Co-Authored-By: <modelo que participou> <noreply@anthropic.com>

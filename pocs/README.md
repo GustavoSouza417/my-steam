@@ -6,7 +6,7 @@ Cada PoC fica numa subpasta própria, numerada por **ordem de criação** — a
 sequência é histórica, como a dos [ADRs](../docs/adr/):
 
 ```
-pocs/001-nome-do-experimento/
+pocs/001-experiment-name/
 ```
 
 ## O que é código de PoC

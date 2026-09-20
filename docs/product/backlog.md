@@ -1,7 +1,7 @@
 # Backlog
 
 Funcionalidades macro, agrupadas pelos domínios de
-[`002-scope.md`](002-scope.md). É o inventário do que existe no produto e do
+[`scope.md`](scope.md). É o inventário do que existe no produto e do
 que já foi construído — **não** é uma ordem de execução: a próxima fatia é
 escolhida explicitamente a cada momento.
 
