@@ -6,7 +6,7 @@ Arquivos e pastas: **inglês**, **tudo minúsculo**, palavras separadas por
 **hífen**.
 
 ```
-002-naming.md        game-library/       user-profile.ts
+naming.md            game-library/       user-profile.ts
 ```
 
 Vale para o repositório inteiro, incluindo documentação. O conteúdo dos

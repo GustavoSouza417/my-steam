@@ -18,4 +18,4 @@ As regras que o agente de IA segue neste repositório estão em
 [CLAUDE.md](CLAUDE.md).
 
 Nada foi construído ainda — o estado de cada funcionalidade está em
-[docs/product/003-backlog.md](docs/product/003-backlog.md).
+[docs/product/backlog.md](docs/product/backlog.md).

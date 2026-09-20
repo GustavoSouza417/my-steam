@@ -8,7 +8,7 @@ identificadores, módulos e rotas. Ao nomear algo que representa um conceito
 daqui, use esse termo, não uma tradução própria.
 
 A lista de funcionalidades e o que já existe estão em
-[`003-backlog.md`](003-backlog.md).
+[`backlog.md`](backlog.md).
 
 ## Loja (`store`)
 

@@ -21,7 +21,7 @@ construir o software e aprender desenvolvimento assistido por IA.
 
 Projeto pessoal de aprendizado. Sem prazo, sem usuários reais, sem operação.
 Jogos, catálogo e pagamentos são fictícios. Download, instalação e execução
-dos jogos, porém, são reais — ver [`002-scope.md`](002-scope.md).
+dos jogos, porém, são reais — ver [`scope.md`](scope.md).
 
 ## Não-objetivos
 
@@ -32,7 +32,7 @@ dos jogos, porém, são reais — ver [`002-scope.md`](002-scope.md).
 
 ## Como o escopo é tratado
 
-O escopo total é grande e já conhecido — está em [`002-scope.md`](002-scope.md).
+O escopo total é grande e já conhecido — está em [`scope.md`](scope.md).
 A construção é incremental: uma fatia funcional de cada vez, escolhida
 explicitamente. O escopo completo existe como mapa, não como backlog a ser
 atacado de uma vez.
