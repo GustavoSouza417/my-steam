@@ -22,7 +22,7 @@ de arquivo exige**:
 | Caso | Exemplo |
 |---|---|
 | Arquivos de raiz reconhecidos por convenção | `README.md`, `LICENSE`, `CLAUDE.md` |
-| Ferramentas que esperam um nome exato | `Dockerfile`, `Makefile` |
+| Ferramentas que esperam um nome exato | `Dockerfile`, `Makefile`, `SKILL.md` |
 | Componentes em ecossistemas que usam PascalCase | `GameCard.jsx` |
 
 O critério é sempre o mesmo: a exceção existe porque **a ferramenta ou o
