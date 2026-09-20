@@ -2,11 +2,12 @@
 
 Experimentos para responder perguntas técnicas antes de decidir arquitetura.
 
-Cada PoC fica numa subpasta própria, numerada por **ordem de criação** — a
-sequência é histórica, como a dos [ADRs](../docs/adr/):
+Na raiz de `pocs/` ficam apenas este índice e o [`template.md`](template.md).
+As PoCs em si vivem em `experiments/`, cada uma na sua subpasta, numerada por
+**ordem de criação** — a sequência é histórica, como a dos [ADRs](../docs/adr/):
 
 ```
-pocs/001-experiment-name/
+pocs/experiments/001-experiment-name/
 ```
 
 ## O que é código de PoC
