@@ -39,7 +39,8 @@ grande demais: o caminho é dividi-lo, não descrevê-lo melhor.
 
 ## Coautoria
 
-Commits gerados com o agente levam o trailer de coautoria:
+Todo commit gerado com o agente leva o trailer de coautoria, inclusive os
+de merge:
 
 ```
 Co-Authored-By: <modelo que participou> <noreply@anthropic.com>
