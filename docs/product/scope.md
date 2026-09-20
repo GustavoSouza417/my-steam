@@ -76,8 +76,11 @@ O **save** (`save`) pertence ao jogo e é um contador: quantas vezes o jogador j
 aquele título. O jogo exibe esse número junto do próprio nome ao rodar. Fica
 na nuvem, não no disco — reinstalar ou trocar de máquina preserva a contagem.
 
-A **telemetria** (`telemetry`) pertence à plataforma: tempo jogado, sessões, última vez
-jogado, conquistas. São coisas distintas e não devem ser confundidas.
+A **telemetria** (`telemetry`) pertence à plataforma: tempo jogado, sessões e
+última vez jogado. São coisas distintas e não devem ser confundidas.
+
+As **conquistas** aparecem em Comunidade, mas a que domínio elas pertencem de
+fato ainda não foi decidido — o domínio não foi detalhado a esse ponto.
 
 ### Overlay (`overlay`)
 
