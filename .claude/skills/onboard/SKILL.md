@@ -2,6 +2,9 @@
 name: onboard
 description: Carrega o contexto do projeto no começo de um chat novo. Lê a documentação por inteiro, mapeia a estrutura do repositório e devolve um resumo curto do estado atual, para o usuário conferir antes de o trabalho começar. Use quando o usuário pedir /onboard.
 disable-model-invocation: true
+model: claude-opus-5
+effort: xhigh
+disallowed-tools: Edit, Write
 ---
 
 # Onboarding no projeto
