@@ -84,12 +84,18 @@ A promoção não cria commit novo — o ambiente seguinte recebe exatamente o q
 foi aprovado no anterior. Se um `--ff-only` falhar, é sinal de que alguém
 commitou direto numa branch de ambiente, o que este fluxo não permite.
 
-**Mensagem de merge**: segue o mesmo padrão dos commits, já que o padrão do
-git (`Merge branch 'x'`) não segue.
+**Mensagem de merge**: segue o mesmo padrão dos commits — incluindo o trailer
+de coautoria, porque um merge feito pelo agente também é um commit feito pelo
+agente. O padrão do git (`Merge branch 'x'`) não serve.
 
 ```
 chore(my-steam): merge clarity-audit fixes into dev
+
+Co-Authored-By: <modelo que participou> <noreply@anthropic.com>
 ```
+
+**Quem mescla**: o agente leva uma branch temporária até `dev` por conta
+própria. De `dev` para cima, cada promoção acontece por ordem do usuário.
 
 ## Hotfix
 

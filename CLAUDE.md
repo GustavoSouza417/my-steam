@@ -56,8 +56,9 @@ Conventional Commits, em inglês, pequenos e frequentes. Título; corpo só
 quando necessário; trailer de coautoria sempre. Regras completas em
 [`docs/devsecops/commits.md`](docs/devsecops/commits.md).
 
-O agente commita por conta própria nas **branches temporárias**. Merge entre
-branches de ambiente e push só acontecem por ordem do usuário.
+O agente commita por conta própria nas **branches temporárias** e pode mesclar
+uma branch temporária em `dev` sozinho. De `dev` para cima, cada promoção
+depende de ordem do usuário, assim como o push.
 
 ## Documentação
 
