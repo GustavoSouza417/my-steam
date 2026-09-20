@@ -20,9 +20,8 @@ destes.
 
 Convenções de trabalho: commits, branches, CI/CD, segurança, deploy.
 
-1. [`commits.md`](devsecops/commits.md) — formato, tamanho e frequência dos commits.
+1. [`git.md`](devsecops/git.md) — commits, modelo de branches, merges e hotfix.
 2. [`naming.md`](devsecops/naming.md) — nomes de arquivos, pastas e identificadores no código.
-3. [`branches.md`](devsecops/branches.md) — modelo de branches, nomenclatura e hotfix.
 
 ## [`adr/`](adr/) — como estamos construindo
 

@@ -53,9 +53,9 @@ Mudanças grandes devem ser quebradas em etapas menores, cada uma revisável.
 ### Commits e branches
 
 Conventional Commits, em inglês, pequenos e frequentes. Título; corpo só
-quando necessário; trailer de coautoria sempre. Regras completas em
-[`docs/devsecops/commits.md`](docs/devsecops/commits.md); o modelo de branches
-está em [`docs/devsecops/branches.md`](docs/devsecops/branches.md).
+quando necessário; trailer de coautoria sempre. Branches temporárias nascem de
+`dev` e voltam para `dev` com `--no-ff`. Regras completas em
+[`docs/devsecops/git.md`](docs/devsecops/git.md).
 
 O agente commita por conta própria nas **branches temporárias** e pode mesclar
 uma branch temporária em `dev` sozinho. De `dev` para cima, cada promoção
