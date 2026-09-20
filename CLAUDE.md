@@ -50,15 +50,28 @@ explicitamente, uma de cada vez, junto com o usuário, e registradas em
 
 Mudanças grandes devem ser quebradas em etapas menores, cada uma revisável.
 
-### Commits
+### Commits e branches
 
 Conventional Commits, em inglês, pequenos e frequentes. Título; corpo só
 quando necessário; trailer de coautoria sempre. Regras completas em
-[`docs/devsecops/commits.md`](docs/devsecops/commits.md).
+[`docs/devsecops/commits.md`](docs/devsecops/commits.md); o modelo de branches
+está em [`docs/devsecops/branches.md`](docs/devsecops/branches.md).
 
 O agente commita por conta própria nas **branches temporárias** e pode mesclar
 uma branch temporária em `dev` sozinho. De `dev` para cima, cada promoção
 depende de ordem do usuário, assim como o push.
+
+Essa autonomia vem com uma contrapartida: **toda mexida em git é relatada em
+texto**, sem o usuário precisar ir conferir no terminal. Ao final da resposta,
+diga em uma linha cada:
+
+- qual branch foi criada e de onde ela saiu;
+- o que foi commitado e em qual branch;
+- o que foi mesclado em quê;
+- em qual branch a conversa está agora.
+
+Omita o que não aconteceu. "Commitei e mesclei" não serve: sem os nomes das
+branches, o usuário perde o fio de onde o trabalho está.
 
 ## Documentação
 
